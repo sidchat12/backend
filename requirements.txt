@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+httpx
+python-dotenv
+google-generativeai
+sentence-transformers
+langgraph
+langchain
+pydantic
+python-multipart
+PyPDF2
+requests
+mistralai
