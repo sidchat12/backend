@@ -15,11 +15,14 @@ app = FastAPI(title="GitHub Portfolio Analyzer")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://your-frontend-name.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 portfolio_graph = build_portfolio_graph()
 
@@ -108,3 +111,4 @@ async def analyze_with_resume(
 @app.get("/health")
 def health_check():
     return {"status": "running"}
+
